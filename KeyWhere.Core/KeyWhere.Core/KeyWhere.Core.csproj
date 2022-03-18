@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Cake" />
+    <None Remove="Native\" />
+    <None Remove="Native\macOS\" />
+    <None Remove="Native\Windows\" />
+    <None Remove="Native\Abstraction\" />
+    <None Remove="Net\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Cake" Version="1.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Native\" />
+    <Folder Include="Native\macOS\" />
+    <Folder Include="Native\Windows\" />
+    <Folder Include="Native\Abstraction\" />
+    <Folder Include="Net\" />
+  </ItemGroup>
+</Project>
